@@ -8,7 +8,7 @@ def load_library(path)
   
   YAML.load_file(path).each {|meaning, japmeaning|
     eng, jap = japmeaning
-    mot_lib[meaning][jap] = meaning
+    mot_lib[meaning][jap] = "meaning"
     mot_lib[emoticon][eng] = jap
   }
   return mot_lib
