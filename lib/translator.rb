@@ -6,7 +6,7 @@ def load_library
   "emoticon" => {}
   }
   
-  YAML.load_file.each {|
+  YAML.load_file.each {|meaning, 
   
   return mot_lib
 end
