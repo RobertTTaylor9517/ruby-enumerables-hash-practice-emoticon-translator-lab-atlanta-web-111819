@@ -8,7 +8,8 @@ def load_library
   
   YAML.load_file.each {|meaning, japmeaning|
     eng, jap = japmeaning
-    mot_lib[meaning][jap] = japmeaning
+    mot_lib[meaning][jap] = meaning
+    mot_lib[japmeaning][eng] = jap
   }
   
   return mot_lib
