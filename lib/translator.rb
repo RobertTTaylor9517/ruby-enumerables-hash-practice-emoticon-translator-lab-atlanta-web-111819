@@ -2,13 +2,13 @@
 require "yaml"
 
 def load_library(path)
-  mot_lib = {"meaning" => {}, 
-  "emoticon" => {}
+  mot_lib = {"get_meaning" => {}, 
+  "get_emoticon" => {}
   }
   
   YAML.load_file(path).each {|meaning, japmeaning|
     eng, jap = japmeaning
-    mot_lib[meaning][jap] = "meaning"
+    mot_lib[meaning][jap] = get_meaning
     mot_lib[emoticon][eng] = jap
   }
   return mot_lib
