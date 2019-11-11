@@ -11,7 +11,6 @@ def load_library
     mot_lib[meaning][jap] = meaning
     mot_lib[japmeaning][eng] = jap
   }
-  
   return mot_lib
 end
 
