@@ -7,6 +7,7 @@ def load_library
   }
   
   YAML.load_file.each {|meaning, japmeaning|
+    eng, jap = japmeaning
     
   }
   
