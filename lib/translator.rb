@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon(path, emote)
   emote_lib = load_library(path)
-  answer = emote_lib["get_meaning"][emote]
+  answer = emote_lib["get_emoticon"][emote]
   if answer
     return answer
   else
@@ -26,7 +26,7 @@ end
 
 def get_english_meaning(path, emote)
   emote_lib = load_library(path)
-  answer = emote_lib["get_emoticon"][emote]
+  answer = emote_lib["get_meaning"][emote]
   if answer
     return answer
   else
