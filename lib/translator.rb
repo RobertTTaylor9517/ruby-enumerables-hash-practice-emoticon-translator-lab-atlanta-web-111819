@@ -2,7 +2,7 @@
 require "yaml"
 
 def load_library
-  mot_lib = {get_meaning}
+  mot_lib = {"get_meaning" => }
   return mot_lib
 end
 
