@@ -1,5 +1,5 @@
 # require modules here
-require "yaml"
+require "YAML"
 
 def load_library
   mot_lib = {"meaning" => {}, 
