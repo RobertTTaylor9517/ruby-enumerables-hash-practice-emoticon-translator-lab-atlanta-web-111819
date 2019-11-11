@@ -20,7 +20,7 @@ def get_japanese_emoticon(path, emote)
   if answer
     return answer
   else
-    return "no answer"
+    return "Sorry, that emoticon was not found"
   end
 end
 
@@ -30,6 +30,6 @@ def get_english_meaning(path, emote)
   if answer
     return answer
   else
-    return "no answer"
+    return "Sorry, that emoticon was not found"
   end
 end
