@@ -6,7 +6,7 @@ def load_library
   "emoticon" => {}
   }
   
-  YAML.load_file.each {|meaning, japmeaning|
+  YAML.load_file('emoticons.yml').each {|meaning, japmeaning|
     eng, jap = japmeaning
     mot_lib[meaning][jap] = meaning
     mot_lib[emoticon][eng] = jap
