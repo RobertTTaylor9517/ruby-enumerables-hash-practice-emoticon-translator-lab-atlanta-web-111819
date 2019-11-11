@@ -2,7 +2,7 @@
 require "yaml"
 
 def load_library
-  mot_lib = YAML.load_file('emoticons.yml')
+  mot_lib = 
   return mot_lib
 end
 
