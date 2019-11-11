@@ -21,6 +21,7 @@ def get_japanese_emoticon(path, emote)
     return answer
   else
     return "no answer"
+  end
 end
 
 def get_english_meaning
